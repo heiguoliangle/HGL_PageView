@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HGL_PageView_Example' do
+  pod 'HGL_PageView', :path => '../'
+
+  target 'HGL_PageView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
