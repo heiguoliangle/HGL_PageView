@@ -1,0 +1,22 @@
+{
+  "name": "HGL_PageView",
+  "version": "0.1.0",
+  "summary": "A short description of HGL_PageView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/heiguoliangle/HGL_PageView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "heiguoliangle": "heiguoliangle@163.com"
+  },
+  "source": {
+    "git": "https://github.com/heiguoliangle/HGL_PageView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HGL_PageView/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module HGL_PageView {
+  umbrella header "HGL_PageView-umbrella.h"
+
+  export *
+  module * { export * }
+}

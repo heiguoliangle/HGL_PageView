@@ -1,0 +1,16 @@
+PODS:
+  - HGL_PageView (0.1.0)
+
+DEPENDENCIES:
+  - HGL_PageView (from `../`)
+
+EXTERNAL SOURCES:
+  HGL_PageView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HGL_PageView: d0fefdc58d69e892585cfd4547983b12f3cb7012
+
+PODFILE CHECKSUM: 266d55b5c0916dc174e439b54a46efaa8b173f1d
+
+COCOAPODS: 1.2.0

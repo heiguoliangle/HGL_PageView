@@ -15,6 +15,11 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6200AFE644A6EB569D7FD46A /* Pods_HGL_PageView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6566EBEC40FDF76D5E6C0373 /* Pods_HGL_PageView_Tests.framework */; };
 		9BDA91AFA6EA9BCA6A3183B3 /* Pods_HGL_PageView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA76F2AC0BF6C366F04B7F8A /* Pods_HGL_PageView_Example.framework */; };
+		F90184D31F666D30008BB267 /* HGL_ContainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90184CF1F666CE0008BB267 /* HGL_ContainView.swift */; };
+		F90184D41F666D34008BB267 /* HGL_TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90184D11F666CE0008BB267 /* HGL_TitleView.swift */; };
+		F90184D51F666D38008BB267 /* HGL_PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90184D01F666CE0008BB267 /* HGL_PageView.swift */; };
+		F90184D71F66714A008BB267 /* HGL_TitleViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90184D61F66714A008BB267 /* HGL_TitleViewStyle.swift */; };
+		F90184DB1F667838008BB267 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90184DA1F667838008BB267 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,13 +45,20 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6566EBEC40FDF76D5E6C0373 /* Pods_HGL_PageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HGL_PageView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B4640773AC25A7BCEB5117F /* HGL_PageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HGL_PageView.podspec; path = ../HGL_PageView.podspec; sourceTree = "<group>"; };
-		6D16A7F774D172055017D148 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		A3966F97F47670E0A85AF188 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6B4640773AC25A7BCEB5117F /* HGL_PageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HGL_PageView.podspec; path = ../HGL_PageView.podspec; sourceTree = "<group>"; };
+		6D16A7F774D172055017D148 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A3966F97F47670E0A85AF188 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D286C3EFC21CB4C63B9B5990 /* Pods-HGL_PageView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGL_PageView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HGL_PageView_Tests/Pods-HGL_PageView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DA76F2AC0BF6C366F04B7F8A /* Pods_HGL_PageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HGL_PageView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE35ABEF48DFB72AF0438E32 /* Pods-HGL_PageView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGL_PageView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HGL_PageView_Example/Pods-HGL_PageView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E07A33281488FF2A66F74C55 /* Pods-HGL_PageView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGL_PageView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HGL_PageView_Tests/Pods-HGL_PageView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F90184CE1F666CE0008BB267 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		F90184CF1F666CE0008BB267 /* HGL_ContainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGL_ContainView.swift; sourceTree = "<group>"; };
+		F90184D01F666CE0008BB267 /* HGL_PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGL_PageView.swift; sourceTree = "<group>"; };
+		F90184D11F666CE0008BB267 /* HGL_TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGL_TitleView.swift; sourceTree = "<group>"; };
+		F90184D21F666CE0008BB267 /* ReplaceMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		F90184D61F66714A008BB267 /* HGL_TitleViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGL_TitleViewStyle.swift; sourceTree = "<group>"; };
+		F90184DA1F667838008BB267 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +105,7 @@
 		607FACD21AFB9204008FA782 /* Example for HGL_PageView */ = {
 			isa = PBXGroup;
 			children = (
+				F90184CD1F666CE0008BB267 /* Classes */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -159,6 +172,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F90184CD1F666CE0008BB267 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F90184CE1F666CE0008BB267 /* .gitkeep */,
+				F90184D01F666CE0008BB267 /* HGL_PageView.swift */,
+				F90184D61F66714A008BB267 /* HGL_TitleViewStyle.swift */,
+				F90184D11F666CE0008BB267 /* HGL_TitleView.swift */,
+				F90184CF1F666CE0008BB267 /* HGL_ContainView.swift */,
+				F90184D21F666CE0008BB267 /* ReplaceMe.swift */,
+				F90184DA1F667838008BB267 /* UIColor.swift */,
+			);
+			name = Classes;
+			path = ../../HGL_PageView/Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,10 +243,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = KUWC22M6K3;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = KUWC22M6K3;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -361,6 +391,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F90184D51F666D38008BB267 /* HGL_PageView.swift in Sources */,
+				F90184DB1F667838008BB267 /* UIColor.swift in Sources */,
+				F90184D41F666D34008BB267 /* HGL_TitleView.swift in Sources */,
+				F90184D31F666D30008BB267 /* HGL_ContainView.swift in Sources */,
+				F90184D71F66714A008BB267 /* HGL_TitleViewStyle.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -496,6 +531,7 @@
 			baseConfigurationReference = 39CEB906EB65651D23EA5994 /* Pods-HGL_PageView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KUWC22M6K3;
 				INFOPLIST_FILE = HGL_PageView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -510,6 +546,7 @@
 			baseConfigurationReference = DE35ABEF48DFB72AF0438E32 /* Pods-HGL_PageView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KUWC22M6K3;
 				INFOPLIST_FILE = HGL_PageView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -523,6 +560,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E07A33281488FF2A66F74C55 /* Pods-HGL_PageView_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = KUWC22M6K3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -543,6 +581,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D286C3EFC21CB4C63B9B5990 /* Pods-HGL_PageView_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = KUWC22M6K3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
