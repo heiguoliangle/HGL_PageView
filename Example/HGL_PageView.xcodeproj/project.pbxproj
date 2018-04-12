@@ -56,7 +56,6 @@
 		F90184CF1F666CE0008BB267 /* HGL_ContainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGL_ContainView.swift; sourceTree = "<group>"; };
 		F90184D01F666CE0008BB267 /* HGL_PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGL_PageView.swift; sourceTree = "<group>"; };
 		F90184D11F666CE0008BB267 /* HGL_TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGL_TitleView.swift; sourceTree = "<group>"; };
-		F90184D21F666CE0008BB267 /* ReplaceMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		F90184D61F66714A008BB267 /* HGL_TitleViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGL_TitleViewStyle.swift; sourceTree = "<group>"; };
 		F90184DA1F667838008BB267 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,7 +179,6 @@
 				F90184D61F66714A008BB267 /* HGL_TitleViewStyle.swift */,
 				F90184D11F666CE0008BB267 /* HGL_TitleView.swift */,
 				F90184CF1F666CE0008BB267 /* HGL_ContainView.swift */,
-				F90184D21F666CE0008BB267 /* ReplaceMe.swift */,
 				F90184DA1F667838008BB267 /* UIColor.swift */,
 			);
 			name = Classes;
@@ -483,6 +481,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -522,6 +521,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -537,7 +537,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -552,7 +552,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

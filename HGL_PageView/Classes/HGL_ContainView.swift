@@ -20,9 +20,9 @@ private let kCellKey = "cellKey"
 class HGL_ContainView: UIView {
     
     weak var containDelegate : HGL_ContainViewDelegate?
-    
     fileprivate var childVc : [UIViewController]
     fileprivate var startOffset : CGFloat = 0.0
+    fileprivate var isClickTitleView : Bool = false
     
     fileprivate var parentVc : UIViewController
     fileprivate lazy var collectionView : UICollectionView = {
@@ -63,9 +63,6 @@ class HGL_ContainView: UIView {
         for child in childVc {
             parentVc.addChildViewController(child)
         }
-        
-        
-        
         addSubview(collectionView)
         
         
@@ -85,7 +82,7 @@ extension HGL_ContainView : UICollectionViewDataSource,UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kCellKey, for: indexPath)
-        cell.backgroundColor = UIColor.randomColor()
+//        cell.backgroundColor = UIColor.randomColor()
         
         for  subView in cell.contentView.subviews {
             subView.removeFromSuperview()
@@ -128,10 +125,12 @@ extension HGL_ContainView : UICollectionViewDataSource,UICollectionViewDelegate{
             progress = (startOffset - scrollView.contentOffset.x ) / scrollView.bounds.size.width
         }
         
-      print(progress)
+//      print(progress)
         
-        
-        containDelegate?.contentChange(self, targtIndex: targtIndex, progress: progress)
+        if isClickTitleView {
+            containDelegate?.contentChange(self, targtIndex: targtIndex, progress: progress)
+        }
+        isClickTitleView = true
     }
     
     
@@ -141,9 +140,13 @@ extension HGL_ContainView : UICollectionViewDataSource,UICollectionViewDelegate{
         startOffset = scrollView.contentOffset.x
         
     }
+    
+    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+        scrollView.isUserInteractionEnabled = false
+    }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         contentChange()
-        
+        scrollView.isUserInteractionEnabled = true
         
     }
     
@@ -152,6 +155,7 @@ extension HGL_ContainView : UICollectionViewDataSource,UICollectionViewDelegate{
         if !decelerate {
             contentChange()
         }
+//        scrollView.isUserInteractionEnabled = false
         
         
     }
@@ -169,12 +173,8 @@ extension HGL_ContainView : UICollectionViewDataSource,UICollectionViewDelegate{
  // MARK: - titleView 代理
 extension HGL_ContainView : HGL_TitleViewDelegate {
     func titleView(_ titleView: HGL_TitleView, targtIndex: Int) {
+        
+        isClickTitleView = false
         collectionView.scrollToItem(at:         IndexPath(item: targtIndex, section: 0), at: .left, animated: false)
-        
-    
-        
-        
     }
-    
-    
 }

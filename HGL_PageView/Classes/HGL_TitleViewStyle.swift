@@ -9,17 +9,16 @@
 
 import UIKit
 
-class HGL_TitleViewStyle {
+public class HGL_TitleViewStyle : NSObject {
     
-    var titleViewHeight : CGFloat = 44
-    
-    var normalColor : UIColor = UIColor.blue
-    var selectColor : UIColor = UIColor.orange
-    
-    var titleSize : CGFloat = 17
-    
-    var isScrollEnable = false
-    var itemMargin : CGFloat = 20
+    public var titleViewHeight : CGFloat = 44
+    public var normalColor : UIColor = UIColor.blue
+    public var selectColor : UIColor = UIColor.orange
+    public var titleViewNormalColor : UIColor = UIColor.white
+    public var containViewNormalColor : UIColor = UIColor.white
+    public var titleSize : CGFloat = 17
+    public var isScrollEnable = false
+    public var itemMargin : CGFloat = 20
     
     
     
